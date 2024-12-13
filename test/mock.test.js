@@ -2,10 +2,7 @@ const { MockServer } = require('./MockServer');
 const axios = require('axios').default;
 
 /*
-    Since the port where the mock server port is arbtrary assigned by
-    the OS, which is good because we need it that way for automated tests,
-    we need to specify in every HTTP request the port where the mock server
-    is listening.
+    The listening port of the mock server will be assigned by the operating system.
 
     We could use a library like supertest that abstract the port binding for us,
     but, since this is a project for learning purposes I prefer to not use any dependency
